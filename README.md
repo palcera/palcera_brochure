@@ -31,6 +31,11 @@ demo content ready to replace with your own.
 Add the template to a Drupal CMS project and install the site using this recipe:
 
 ```bash
+# The template currently carries three not-yet-stable dependencies
+# (schemadotorg alpha, webform RC, palcera_theme beta) — allow them first:
+composer config minimum-stability dev
+composer config prefer-stable true
+
 composer require drupal/palcera_brochure
 drush site:install --site-name="My Site" recipes/palcera_brochure
 ```
