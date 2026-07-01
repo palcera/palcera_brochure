@@ -41,3 +41,7 @@ DDEV project config lives in `.ddev/config.yaml`. Use `.ddev/config.local.yaml` 
   the home page is a 9-section Canvas page. Content templates cover card + full view modes.
 - Regenerate config/content with `drush site:export` from a configured site rather than
   hand-editing exported YAML wholesale.
+- **Post-export patch (required):** after any `drush site:export`, re-add the
+  `schemadotorg.schemadotorg_mapping_type.<entity>` entry to each
+  `schemadotorg.schemadotorg_mapping.*.yml` `dependencies.config` — the alpha
+  module omits it and flat-recipe install fails without it.
