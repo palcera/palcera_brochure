@@ -2,10 +2,11 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.media.video.field_media_oembed_video
-    - media.type.video
+  - field.field.media.video.field_media_oembed_video
+  - media.type.video
+  - schemadotorg.schemadotorg_mapping_type.media
   module:
-    - media
+  - media
 id: media.video
 target_entity_type_id: media
 target_bundle: video
@@ -17,4 +18,4 @@ schema_properties:
   name: name
   thumbnail: thumbnail
   field_media_oembed_video: video
-additional_mappings: {  }
+additional_mappings: {}
