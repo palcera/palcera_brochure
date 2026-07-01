@@ -1,0 +1,30 @@
+_meta:
+  version: '1.0'
+  entity_type: crop
+  uuid: e471abff-fe2b-4569-8e1c-fec7e18582be
+  bundle: focal_point
+  default_langcode: en
+  depends:
+    f0000001-0001-4000-a000-000000000005: file
+default:
+  entity_id:
+    -
+      uuid: f0000001-0001-4000-a000-000000000005
+  entity_type:
+    -
+      value: file
+  uri:
+    -
+      value: 'public://2026-02/person-alex-morgan.jpg'
+  x:
+    -
+      value: 500
+  'y':
+    -
+      value: 389
+  revision_uid:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true

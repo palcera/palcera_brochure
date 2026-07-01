@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: node--article
+label: 'Content: Article'
+tags:
+  description: '[node:field_seo_description|node:schema_abstract]'
+  og_description: '[node:field_seo_description|node:schema_abstract]'
+  twitter_cards_description: '[node:field_seo_description|node:schema_abstract]'

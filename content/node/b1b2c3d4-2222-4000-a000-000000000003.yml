@@ -1,0 +1,62 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: b1b2c3d4-2222-4000-a000-000000000003
+  bundle: person
+  default_langcode: en
+  depends:
+    e0000001-0001-4000-a000-000000000007: media
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Sam Rivera'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /profiles/sam-rivera
+      langcode: en
+  schema_description:
+    -
+      value: '<p>Sam is an operations lead with deep expertise in process improvement, vendor management, and scaling day-to-day operations. Sam helps clients remove bottlenecks while keeping quality high.</p>'
+      format: content_format
+  schema_email:
+    -
+      value: sam@meridianpartners.example
+  schema_family_name:
+    -
+      value: Rivera
+  schema_given_name:
+    -
+      value: Sam
+  schema_image:
+    -
+      entity: e0000001-0001-4000-a000-000000000007
+  schema_job_title:
+    -
+      value: 'Operations Lead'
+  schema_knows_language:
+    -
+      value: English
+  schema_telephone:
+    -
+      value: +1-555-0103
+  schema_works_for:
+    -
+      value: 'Meridian Partners'

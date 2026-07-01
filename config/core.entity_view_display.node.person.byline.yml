@@ -1,0 +1,64 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.byline
+    - field.field.node.person.field_component_tree
+    - field.field.node.person.field_metatag
+    - field.field.node.person.schema_additional_name
+    - field.field.node.person.schema_description
+    - field.field.node.person.schema_email
+    - field.field.node.person.schema_family_name
+    - field.field.node.person.schema_given_name
+    - field.field.node.person.schema_image
+    - field.field.node.person.schema_job_title
+    - field.field.node.person.schema_knows_language
+    - field.field.node.person.schema_member_of
+    - field.field.node.person.schema_related_link
+    - field.field.node.person.schema_same_as
+    - field.field.node.person.schema_significant_link
+    - field.field.node.person.schema_telephone
+    - field.field.node.person.schema_works_for
+    - node.type.person
+  module:
+    - user
+id: node.person.byline
+targetEntityType: node
+bundle: person
+mode: byline
+content:
+  schema_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: 1_1_square_medium
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  schema_job_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  content_moderation_control: true
+  field_component_tree: true
+  field_metatag: true
+  links: true
+  schema_additional_name: true
+  schema_description: true
+  schema_email: true
+  schema_family_name: true
+  schema_given_name: true
+  schema_knows_language: true
+  schema_member_of: true
+  schema_related_link: true
+  schema_same_as: true
+  schema_significant_link: true
+  schema_telephone: true
+  schema_works_for: true
+  search_api_excerpt: true

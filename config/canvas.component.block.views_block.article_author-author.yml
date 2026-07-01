@@ -1,0 +1,36 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.article_author
+  module:
+    - views
+active_version: 5cbf4f51b879da69
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'views_block:article_author-author'
+        label: 'Article Author: Article author'
+        label_display: '0'
+        provider: views
+        views_label: ''
+        items_per_page: null
+    fallback_metadata:
+      slot_definitions: null
+  701328914b351427:
+    settings:
+      default_settings:
+        id: 'views_block:article_author-author'
+        label: 'Article Author: Article author'
+        label_display: '0'
+        provider: views
+        views_label: ''
+        items_per_page: null
+    fallback_metadata:
+      slot_definitions: null
+label: 'Article Author: Article author'
+id: block.views_block.article_author-author
+provider: views
+source: block
+source_local_id: 'views_block:article_author-author'

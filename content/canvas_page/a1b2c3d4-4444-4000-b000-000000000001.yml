@@ -1,0 +1,96 @@
+_meta:
+  version: '1.0'
+  entity_type: canvas_page
+  uuid: a1b2c3d4-4444-4000-b000-000000000001
+  default_langcode: en
+default:
+  revision_user:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  owner:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Our Services'
+  components:
+    -
+      uuid: d0000002-0001-4000-a000-000000000001
+      component_id: sdc.palcera_theme.section
+      inputs:
+        columns: '100'
+        width: 75%
+        margin_block_start: '48'
+        margin_block_end: '0'
+        mobile_columns: 1
+        padding_block_start: '0'
+        padding_block_end: '0'
+        section_header: true
+        section_footer: false
+    -
+      parent_uuid: d0000002-0001-4000-a000-000000000001
+      slot: header_slot
+      uuid: d0000002-0001-4000-a000-000000000002
+      component_id: sdc.palcera_theme.heading
+      inputs:
+        heading_text: 'Our services'
+        level: 1
+        text_size: default
+        text_color: default
+        align: center
+    -
+      parent_uuid: d0000002-0001-4000-a000-000000000001
+      slot: header_slot
+      uuid: d0000002-0001-4000-a000-000000000003
+      component_id: sdc.palcera_theme.text
+      inputs:
+        text: 'We help you sharpen strategy, streamline operations, and grow with confidence.'
+        text_size: text-lg
+        text_color: default
+    -
+      uuid: d0000002-0001-4000-a000-000000000010
+      component_id: sdc.palcera_theme.section
+      inputs:
+        columns: '100'
+        width: 100%
+        margin_block_start: '48'
+        margin_block_end: '48'
+        mobile_columns: 1
+        padding_block_start: '0'
+        padding_block_end: '0'
+        section_header: true
+        section_footer: false
+    -
+      parent_uuid: d0000002-0001-4000-a000-000000000010
+      slot: header_slot
+      uuid: d0000002-0001-4000-a000-000000000012
+      component_id: sdc.palcera_theme.heading
+      inputs:
+        heading_text: 'What we offer'
+        level: 2
+        text_size: default
+        text_color: default
+        align: left
+    -
+      parent_uuid: d0000002-0001-4000-a000-000000000010
+      slot: main_slot
+      uuid: d0000002-0001-4000-a000-000000000011
+      component_id: block.views_block.services-listing
+      inputs:
+        label: 'Services: Our services'
+        label_display: '0'
+        views_label: ''
+        items_per_page: null
+  path:
+    -
+      alias: /services
+      langcode: en
+  revision_translation_affected:
+    -
+      value: true
+  metatags:
+    -
+      value: '{"description":"Strategy consulting, operations advisory, and growth planning services for small businesses.","title":"Our Services | [site:name]"}'

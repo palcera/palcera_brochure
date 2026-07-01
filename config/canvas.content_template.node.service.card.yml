@@ -1,0 +1,41 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - canvas.component.sdc.palcera_theme.card-icon
+    - core.base_field_override.node.service.title
+    - core.entity_view_mode.node.card
+    - field.field.node.service.field_icon
+    - field.field.node.service.schema_description
+    - node.type.service
+  module:
+    - node
+    - options
+id: node.service.card
+content_entity_type_id: node
+content_entity_type_bundle: service
+content_entity_type_view_mode: card
+component_tree:
+  '0:a1e2c3d4-5003-4000-a000-000000000001':
+    uuid: a1e2c3d4-5003-4000-a000-000000000001
+    component_id: sdc.palcera_theme.card-icon
+    component_version: 002e9ffe10816cfb
+    inputs:
+      background_color: muted
+      border_radius: medium
+      icon:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:service␝field_icon␞␟target_id'
+      icon_size: large
+      icon_align: center
+      url:
+        sourceType: host-entity-url
+        absolute: true
+      text:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:service␝title␞␟value'
+      description:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:service␝schema_description␞␟processed'
+      text_align: center
+exposed_slots: {  }

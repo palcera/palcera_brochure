@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.article
+    - node.type.general_page
+    - node.type.person
+    - node.type.service
+  module:
+    - node
+id: schema_node_thing
+label: 'Schema.org: Content - Thing'
+type: 'canonical_entities:node'
+pattern: '/[node:schemadotorg:base-path]/[node:schemadotorg:alternate-name]'
+selection_criteria:
+  0b5c0c16-6582-4b67-9f58-ff87a36952d6:
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      article: article
+      general_page: general_page
+      person: person
+      service: service
+selection_logic: and
+weight: -10
+relationships: {  }

@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 33a47b60-6dd8-448f-a9d3-7aab0dd0ac4b
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: meridian-logo-dark.svg
+  uri:
+    -
+      value: 'public://branding/meridian-logo-dark.svg'
+  filemime:
+    -
+      value: image/svg+xml
+  filesize:
+    -
+      value: 347
+  status:
+    -
+      value: true

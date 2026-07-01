@@ -1,0 +1,69 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: b1b2c3d4-2222-4000-a000-000000000001
+  bundle: person
+  default_langcode: en
+  depends:
+    e0000001-0001-4000-a000-000000000005: media
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Alex Morgan'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /profiles/alex-morgan
+      langcode: en
+  schema_description:
+    -
+      value: '<p>Alex is a managing partner with over 20 years of experience helping small businesses sharpen strategy, improve operations, and plan for sustainable growth. Alex founded the firm with a commitment to personal service and plain-language advice.</p>'
+      format: content_format
+  schema_email:
+    -
+      value: alex@meridianpartners.example
+  schema_family_name:
+    -
+      value: Morgan
+  schema_given_name:
+    -
+      value: Alex
+  schema_image:
+    -
+      entity: e0000001-0001-4000-a000-000000000005
+  schema_job_title:
+    -
+      value: 'Managing Partner'
+  schema_knows_language:
+    -
+      value: English
+    -
+      value: Spanish
+  schema_same_as:
+    -
+      uri: 'https://linkedin.com/in/alex-morgan-example'
+      title: LinkedIn
+      options: {  }
+  schema_telephone:
+    -
+      value: +1-555-0101
+  schema_works_for:
+    -
+      value: 'Meridian Partners'

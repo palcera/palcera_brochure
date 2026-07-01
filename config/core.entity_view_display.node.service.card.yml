@@ -1,0 +1,51 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.card
+    - field.field.node.service.field_component_tree
+    - field.field.node.service.field_icon
+    - field.field.node.service.field_metatag
+    - field.field.node.service.schema_description
+    - field.field.node.service.schema_hours_available
+    - field.field.node.service.schema_image
+    - field.field.node.service.schema_related_link
+    - field.field.node.service.schema_service_output
+    - field.field.node.service.schema_service_type
+    - field.field.node.service.schema_significant_link
+    - node.type.service
+  module:
+    - text
+    - ui_icons_field
+    - user
+id: node.service.card
+targetEntityType: node
+bundle: service
+mode: card
+content:
+  field_icon:
+    type: icon_formatter
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  schema_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  content_moderation_control: true
+  field_component_tree: true
+  field_metatag: true
+  links: true
+  schema_hours_available: true
+  schema_image: true
+  schema_related_link: true
+  schema_service_output: true
+  schema_service_type: true
+  schema_significant_link: true
+  search_api_excerpt: true

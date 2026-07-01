@@ -1,0 +1,36 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.latest_articles
+  module:
+    - views
+active_version: 1349457c1ec55cb0
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'views_block:latest_articles-latest'
+        label: 'Latest Articles: Latest articles'
+        label_display: '0'
+        provider: views
+        views_label: ''
+        items_per_page: null
+    fallback_metadata:
+      slot_definitions: null
+  a1b2c3d4e5f60001:
+    settings:
+      default_settings:
+        id: 'views_block:latest_articles-latest'
+        label: 'Latest Articles: Latest articles'
+        label_display: '0'
+        provider: views
+        views_label: ''
+        items_per_page: null
+    fallback_metadata:
+      slot_definitions: null
+label: 'Latest Articles: Latest articles'
+id: block.views_block.latest_articles-latest
+provider: views
+source: block
+source_local_id: 'views_block:latest_articles-latest'

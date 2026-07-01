@@ -1,0 +1,47 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: c1b2c3d4-6666-4000-a000-000000000002
+  bundle: service
+  default_langcode: en
+  depends:
+    e0000001-0001-4000-a000-000000000021: media
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Operations Advisory'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /operations-advisory
+      langcode: en
+  field_icon:
+    -
+      target_id: 'phosphor:currency-dollar'
+  schema_description:
+    -
+      value: '<p>Streamlined processes and organized workflows every month. Process mapping, vendor reviews, and performance tracking so you can focus on running your business.</p>'
+      format: content_format
+  schema_image:
+    -
+      entity: e0000001-0001-4000-a000-000000000021
+  schema_service_type:
+    -
+      value: Operations

@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.schema_hours_available
+    - node.type.service
+id: node.service.schema_hours_available
+field_name: schema_hours_available
+entity_type: node
+bundle: service
+label: 'Hours available'
+description: 'The hours during which this service or contact is available.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: f0000001-0001-4000-a000-000000000009
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: article-consultants-vs-inhouse.jpg
+  uri:
+    -
+      value: 'public://2026-02/article-consultants-vs-inhouse.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 198479
+  status:
+    -
+      value: true

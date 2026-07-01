@@ -1,0 +1,30 @@
+_meta:
+  version: '1.0'
+  entity_type: crop
+  uuid: 86481061-0b63-4568-a1ea-a9bc81a4e194
+  bundle: focal_point
+  default_langcode: en
+  depends:
+    f0000001-0001-4000-a000-000000000009: file
+default:
+  entity_id:
+    -
+      uuid: f0000001-0001-4000-a000-000000000009
+  entity_type:
+    -
+      value: file
+  uri:
+    -
+      value: 'public://2026-02/article-consultants-vs-inhouse.jpg'
+  x:
+    -
+      value: 1000
+  'y':
+    -
+      value: 612
+  revision_uid:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true

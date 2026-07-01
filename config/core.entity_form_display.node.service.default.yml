@@ -1,0 +1,157 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.service.field_component_tree
+    - field.field.node.service.field_icon
+    - field.field.node.service.field_metatag
+    - field.field.node.service.schema_description
+    - field.field.node.service.schema_hours_available
+    - field.field.node.service.schema_image
+    - field.field.node.service.schema_related_link
+    - field.field.node.service.schema_service_output
+    - field.field.node.service.schema_service_type
+    - field.field.node.service.schema_significant_link
+    - node.type.service
+  module:
+    - content_moderation
+    - linkit
+    - media_library
+    - path
+    - text
+    - ui_icons_field
+id: node.service.default
+targetEntityType: node
+bundle: service
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 200
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_icon:
+    type: icon_widget
+    weight: 221
+    region: content
+    settings:
+      icon_selector: icon_autocomplete
+      result_format: list
+      max_result: 24
+    third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
+    weight: 210
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 220
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  schema_description:
+    type: text_textarea
+    weight: 17
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  schema_hours_available:
+    type: string_textfield
+    weight: 37
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  schema_image:
+    type: media_library_widget
+    weight: 8
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  schema_related_link:
+    type: linkit
+    weight: 95
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+      linkit_profile: default
+      linkit_auto_link_text: true
+    third_party_settings: {  }
+  schema_service_output:
+    type: text_textarea
+    weight: 120
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  schema_service_type:
+    type: string_textfield
+    weight: 110
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  schema_significant_link:
+    type: linkit
+    weight: 94
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+      linkit_profile: default
+      linkit_auto_link_text: true
+    third_party_settings: {  }
+  simple_sitemap:
+    weight: 220
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 220
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 200
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_component_tree: true
+  field_metatag: true
+  promote: true
+  publish_on: true
+  publish_state: true
+  sticky: true
+  unpublish_on: true
+  unpublish_state: true

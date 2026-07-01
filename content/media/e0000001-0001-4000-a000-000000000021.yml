@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: e0000001-0001-4000-a000-000000000021
+  bundle: image
+  default_langcode: en
+  depends:
+    f0000001-0001-4000-a000-000000000021: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: service-operations.jpg
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: 'Laptop with a spreadsheet and an organized workspace'
+      title: ''
+      width: 2000
+      height: 1334
+      entity: f0000001-0001-4000-a000-000000000021

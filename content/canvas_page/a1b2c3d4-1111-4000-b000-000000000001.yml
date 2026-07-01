@@ -1,0 +1,574 @@
+_meta:
+  version: '1.0'
+  entity_type: canvas_page
+  uuid: a1b2c3d4-1111-4000-b000-000000000001
+  default_langcode: en
+  depends:
+    f0000001-0001-4000-a000-000000000001: file
+    e0000001-0001-4000-a000-000000000001: media
+    f0000001-0001-4000-a000-000000000002: file
+    e0000001-0001-4000-a000-000000000002: media
+    f0000001-0001-4000-a000-000000000003: file
+    e0000001-0001-4000-a000-000000000003: media
+    f0000001-0001-4000-a000-000000000004: file
+    e0000001-0001-4000-a000-000000000004: media
+default:
+  revision_user:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  owner:
+    -
+      target_id: 1
+  title:
+    -
+      value: Home
+  components:
+    -
+      uuid: 10000001-0001-4000-a000-000000000001
+      component_id: sdc.palcera_theme.hero-billboard
+      inputs:
+        height: full
+        flex_position: center-left
+        overlay_opacity: 60%
+        object_position: center
+        media:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: e0000001-0001-4000-a000-000000000001
+            target_type: media
+        overlap_navbar: false
+    -
+      parent_uuid: 10000001-0001-4000-a000-000000000001
+      slot: hero_slot
+      uuid: 10000001-0001-4000-a000-000000000002
+      component_id: sdc.palcera_theme.badge
+      inputs:
+        label: 'Strategy & Operations Consulting'
+        style: primary
+        icon_first: true
+    -
+      parent_uuid: 10000001-0001-4000-a000-000000000001
+      slot: hero_slot
+      uuid: 10000001-0001-4000-a000-000000000003
+      component_id: sdc.palcera_theme.heading
+      inputs:
+        heading_text: 'Clear direction for growing businesses'
+        level: 1
+        text_size: default
+        text_color: inverted
+        align: left
+    -
+      parent_uuid: 10000001-0001-4000-a000-000000000001
+      slot: hero_slot
+      uuid: 10000001-0001-4000-a000-000000000004
+      component_id: sdc.palcera_theme.text
+      inputs:
+        text:
+          value: '<p>Personal attention from experienced consultants who understand your business. From strategy to day-to-day operations, we help small businesses make confident decisions.</p>'
+          format: canvas_html_block
+        text_size: text-lg
+        text_color: inverted
+    -
+      parent_uuid: 10000001-0001-4000-a000-000000000001
+      slot: hero_slot
+      uuid: 10000001-0001-4000-a000-000000000005
+      component_id: sdc.palcera_theme.group
+      inputs:
+        flex_direction: row
+        flex_gap: md
+        items_align: start
+        flex_align: center
+        radius: sm
+    -
+      parent_uuid: 10000001-0001-4000-a000-000000000005
+      slot: group_slot
+      uuid: 10000001-0001-4000-a000-000000000006
+      component_id: sdc.palcera_theme.button
+      inputs:
+        variant: primary
+        label: 'Book a Free Consultation'
+        size: large
+        icon: arrow-right
+        mobile_width: false
+        icon_first: false
+        disabled: false
+        href: /contact
+    -
+      parent_uuid: 10000001-0001-4000-a000-000000000005
+      slot: group_slot
+      uuid: 10000001-0001-4000-a000-000000000007
+      component_id: sdc.palcera_theme.button
+      inputs:
+        variant: secondary-inverted
+        label: 'Our Services'
+        size: large
+        mobile_width: false
+        icon_first: false
+        disabled: false
+        href: /services
+    -
+      uuid: 10000002-0001-4000-a000-000000000001
+      component_id: sdc.palcera_theme.section
+      inputs:
+        columns: 25-25-25-25
+        mobile_columns: '2'
+        section_header: true
+        section_footer: false
+        margin_block_start: '0'
+        margin_block_end: '0'
+        padding_block_start: '32'
+        padding_block_end: '32'
+        width: 100%
+        background_color: muted
+    -
+      parent_uuid: 10000002-0001-4000-a000-000000000001
+      slot: header_slot
+      uuid: 10000002-0001-4000-a000-00000000000e
+      component_id: sdc.palcera_theme.heading
+      inputs:
+        heading_text: 'Meridian Partners at a glance'
+        level: 2
+        text_size: default
+        text_color: default
+        align: center
+    -
+      parent_uuid: 10000002-0001-4000-a000-000000000001
+      slot: main_slot
+      uuid: 10000002-0001-4000-a000-000000000002
+      component_id: sdc.palcera_theme.group
+      inputs:
+        flex_direction: column
+        flex_gap: sm
+        items_align: center
+        flex_align: center
+    -
+      parent_uuid: 10000002-0001-4000-a000-000000000002
+      slot: group_slot
+      uuid: 10000002-0001-4000-a000-000000000003
+      component_id: sdc.palcera_theme.heading
+      inputs:
+        heading_text: 25+
+        level: 3
+        text_size: heading-responsive-4xl
+        text_color: primary
+        align: center
+    -
+      parent_uuid: 10000002-0001-4000-a000-000000000002
+      slot: group_slot
+      uuid: 10000002-0001-4000-a000-000000000004
+      component_id: sdc.palcera_theme.text
+      inputs:
+        text:
+          value: '<p class="text-align-center">Years advising growing businesses</p>'
+          format: canvas_html_block
+        text_size: text-sm
+        text_color: default
+    -
+      parent_uuid: 10000002-0001-4000-a000-000000000001
+      slot: main_slot
+      uuid: 10000002-0001-4000-a000-000000000005
+      component_id: sdc.palcera_theme.group
+      inputs:
+        flex_direction: column
+        flex_gap: sm
+        items_align: center
+        flex_align: center
+    -
+      parent_uuid: 10000002-0001-4000-a000-000000000005
+      slot: group_slot
+      uuid: 10000002-0001-4000-a000-000000000006
+      component_id: sdc.palcera_theme.heading
+      inputs:
+        heading_text: 400+
+        level: 3
+        text_size: heading-responsive-4xl
+        text_color: primary
+        align: center
+    -
+      parent_uuid: 10000002-0001-4000-a000-000000000005
+      slot: group_slot
+      uuid: 10000002-0001-4000-a000-000000000007
+      component_id: sdc.palcera_theme.text
+      inputs:
+        text:
+          value: '<p class="text-align-center">Clients across industries</p>'
+          format: canvas_html_block
+        text_size: text-sm
+        text_color: default
+    -
+      parent_uuid: 10000002-0001-4000-a000-000000000001
+      slot: main_slot
+      uuid: 10000002-0001-4000-a000-000000000008
+      component_id: sdc.palcera_theme.group
+      inputs:
+        flex_direction: column
+        flex_gap: sm
+        items_align: center
+        flex_align: center
+    -
+      parent_uuid: 10000002-0001-4000-a000-000000000008
+      slot: group_slot
+      uuid: 10000002-0001-4000-a000-000000000009
+      component_id: sdc.palcera_theme.heading
+      inputs:
+        heading_text: 99%
+        level: 3
+        text_size: heading-responsive-4xl
+        text_color: primary
+        align: center
+    -
+      parent_uuid: 10000002-0001-4000-a000-000000000008
+      slot: group_slot
+      uuid: 10000002-0001-4000-a000-00000000000a
+      component_id: sdc.palcera_theme.text
+      inputs:
+        text:
+          value: '<p class="text-align-center">Client retention rate</p>'
+          format: canvas_html_block
+        text_size: text-sm
+        text_color: default
+    -
+      parent_uuid: 10000002-0001-4000-a000-000000000001
+      slot: main_slot
+      uuid: 10000002-0001-4000-a000-00000000000b
+      component_id: sdc.palcera_theme.group
+      inputs:
+        flex_direction: column
+        flex_gap: sm
+        items_align: center
+        flex_align: center
+    -
+      parent_uuid: 10000002-0001-4000-a000-00000000000b
+      slot: group_slot
+      uuid: 10000002-0001-4000-a000-00000000000c
+      component_id: sdc.palcera_theme.heading
+      inputs:
+        heading_text: 40+
+        level: 3
+        text_size: heading-responsive-4xl
+        text_color: primary
+        align: center
+    -
+      parent_uuid: 10000002-0001-4000-a000-00000000000b
+      slot: group_slot
+      uuid: 10000002-0001-4000-a000-00000000000d
+      component_id: sdc.palcera_theme.text
+      inputs:
+        text:
+          value: '<p class="text-align-center">Industries served</p>'
+          format: canvas_html_block
+        text_size: text-sm
+        text_color: default
+    -
+      uuid: 10000003-0001-4000-a000-000000000001
+      component_id: sdc.palcera_theme.section
+      inputs:
+        columns: '100'
+        mobile_columns: '1'
+        section_header: true
+        section_footer: false
+        margin_block_start: '64'
+        margin_block_end: '64'
+        padding_block_start: '0'
+        padding_block_end: '0'
+        width: 100%
+    -
+      parent_uuid: 10000003-0001-4000-a000-000000000001
+      slot: header_slot
+      uuid: 10000003-0001-4000-a000-000000000002
+      component_id: sdc.palcera_theme.heading
+      inputs:
+        heading_text: 'Practical consulting for every stage of growth'
+        level: 2
+        text_size: default
+        text_color: default
+        align: left
+    -
+      parent_uuid: 10000003-0001-4000-a000-000000000001
+      slot: header_slot
+      uuid: 10000003-0001-4000-a000-000000000003
+      component_id: sdc.palcera_theme.text
+      inputs:
+        text:
+          value: '<p>We help you sharpen strategy, streamline operations, and grow with confidence.</p>'
+          format: canvas_html_block
+        text_size: normal
+        text_color: default
+    -
+      parent_uuid: 10000003-0001-4000-a000-000000000001
+      slot: main_slot
+      uuid: 10000003-0001-4000-a000-000000000004
+      component_id: block.views_block.services-listing
+      inputs:
+        label: 'Services: Our services'
+        label_display: '0'
+        views_label: ''
+        items_per_page: null
+    -
+      uuid: 10000004-0001-4000-a000-000000000001
+      component_id: sdc.palcera_theme.hero-side-by-side
+      inputs:
+        image_position: left
+        padding_block_start: '64'
+        padding_block_end: '64'
+        background: accent
+        hero_flex_gap: large
+        hero_flex_direction_mobile: vertical
+        image_size: '4:3'
+        image_radius: small
+        media:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: e0000001-0001-4000-a000-000000000002
+            target_type: media
+    -
+      parent_uuid: 10000004-0001-4000-a000-000000000001
+      slot: hero_slot
+      uuid: 10000004-0001-4000-a000-000000000002
+      component_id: sdc.palcera_theme.heading
+      inputs:
+        heading_text: 'A dedicated consultant who knows your business'
+        level: 2
+        text_size: default
+        text_color: default
+        align: left
+    -
+      parent_uuid: 10000004-0001-4000-a000-000000000001
+      slot: hero_slot
+      uuid: 10000004-0001-4000-a000-000000000003
+      component_id: sdc.palcera_theme.text
+      inputs:
+        text:
+          value: '<p>No call centers, no rotating staff. You work directly with an experienced consultant who understands your industry, your goals, and your history.</p><ul><li>Direct access to your consultant year-round</li><li>Proactive check-ins throughout the year</li><li>Recommendations tailored to your specific situation</li><li>Clear explanations in plain language</li></ul>'
+          format: canvas_html_block
+        text_size: normal
+        text_color: default
+    -
+      parent_uuid: 10000004-0001-4000-a000-000000000001
+      slot: hero_slot
+      uuid: 10000004-0001-4000-a000-000000000004
+      component_id: sdc.palcera_theme.button
+      inputs:
+        variant: primary
+        label: 'Meet Our Team'
+        size: medium
+        icon: arrow-right
+        icon_first: false
+        disabled: false
+        href: /team
+    -
+      uuid: 10000005-0001-4000-a000-000000000001
+      component_id: sdc.palcera_theme.hero-side-by-side
+      inputs:
+        image_position: right
+        padding_block_start: '64'
+        padding_block_end: '64'
+        background: secondary
+        hero_flex_gap: large
+        hero_flex_direction_mobile: vertical
+        image_size: '4:3'
+        image_radius: small
+        media:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: e0000001-0001-4000-a000-000000000003
+            target_type: media
+    -
+      parent_uuid: 10000005-0001-4000-a000-000000000001
+      slot: hero_slot
+      uuid: 10000005-0001-4000-a000-000000000002
+      component_id: sdc.palcera_theme.heading
+      inputs:
+        heading_text: 'Proven methods, modern tools'
+        level: 2
+        text_size: default
+        text_color: default
+        align: left
+    -
+      parent_uuid: 10000005-0001-4000-a000-000000000001
+      slot: hero_slot
+      uuid: 10000005-0001-4000-a000-000000000003
+      component_id: sdc.palcera_theme.text
+      inputs:
+        text:
+          value: '<p>We pair decades of expertise with current technology. Secure document sharing, digital signatures, and real-time financial dashboards keep everything accessible and organized.</p><ul><li>Secure client portal for documents and reports</li><li>Real-time visibility into your key metrics</li><li>Digital onboarding — no paperwork piles</li><li>Bank-grade encryption on all data</li></ul>'
+          format: canvas_html_block
+        text_size: normal
+        text_color: default
+    -
+      parent_uuid: 10000005-0001-4000-a000-000000000001
+      slot: hero_slot
+      uuid: 10000005-0001-4000-a000-000000000004
+      component_id: sdc.palcera_theme.button
+      inputs:
+        variant: primary
+        label: 'Explore Services'
+        size: medium
+        icon: arrow-right
+        icon_first: false
+        disabled: false
+        href: /services
+    -
+      uuid: 10000006-0001-4000-a000-000000000001
+      component_id: sdc.palcera_theme.section
+      inputs:
+        columns: '100'
+        mobile_columns: '1'
+        section_header: true
+        section_footer: false
+        margin_block_start: '64'
+        margin_block_end: '64'
+        padding_block_start: '0'
+        padding_block_end: '0'
+        width: 100%
+    -
+      parent_uuid: 10000006-0001-4000-a000-000000000001
+      slot: header_slot
+      uuid: 10000006-0001-4000-a000-000000000002
+      component_id: sdc.palcera_theme.heading
+      inputs:
+        heading_text: 'Experienced consultants, personal service'
+        level: 2
+        text_size: default
+        text_color: default
+        align: center
+    -
+      parent_uuid: 10000006-0001-4000-a000-000000000001
+      slot: header_slot
+      uuid: 10000006-0001-4000-a000-000000000003
+      component_id: sdc.palcera_theme.text
+      inputs:
+        text:
+          value: '<p class="text-align-center">Every client works directly with a senior consultant. No handoffs, no runaround.</p>'
+          format: canvas_html_block
+        text_size: normal
+        text_color: default
+    -
+      parent_uuid: 10000006-0001-4000-a000-000000000001
+      slot: main_slot
+      uuid: 10000006-0001-4000-a000-000000000004
+      component_id: block.views_block.team_members-team
+      inputs:
+        label: 'Team Members: Team members'
+        label_display: '0'
+        views_label: ''
+        items_per_page: null
+    -
+      uuid: 1000000a-0001-4000-a000-000000000001
+      component_id: sdc.palcera_theme.section
+      inputs:
+        columns: '100'
+        mobile_columns: '1'
+        section_header: true
+        section_footer: false
+        margin_block_start: '64'
+        margin_block_end: '64'
+        padding_block_start: '0'
+        padding_block_end: '0'
+        width: 100%
+    -
+      parent_uuid: 1000000a-0001-4000-a000-000000000001
+      slot: header_slot
+      uuid: 1000000a-0001-4000-a000-000000000002
+      component_id: sdc.palcera_theme.heading
+      inputs:
+        heading_text: 'Insights for business owners'
+        level: 2
+        text_size: default
+        text_color: default
+        align: left
+    -
+      parent_uuid: 1000000a-0001-4000-a000-000000000001
+      slot: header_slot
+      uuid: 1000000a-0001-4000-a000-000000000003
+      component_id: sdc.palcera_theme.text
+      inputs:
+        text:
+          value: '<p>Practical advice on strategy, operations, and growth from our team.</p>'
+          format: canvas_html_block
+        text_size: normal
+        text_color: default
+    -
+      parent_uuid: 1000000a-0001-4000-a000-000000000001
+      slot: main_slot
+      uuid: 1000000a-0001-4000-a000-000000000004
+      component_id: block.views_block.latest_articles-latest
+      inputs:
+        label: 'Latest Articles: Latest articles'
+        label_display: '0'
+        views_label: ''
+        items_per_page: null
+    -
+      uuid: 10000007-0001-4000-a000-000000000001
+      component_id: sdc.palcera_theme.section
+      inputs:
+        columns: '100'
+        mobile_columns: '1'
+        section_header: false
+        section_footer: false
+        margin_block_start: '0'
+        margin_block_end: '0'
+        padding_block_start: '64'
+        padding_block_end: '64'
+        width: 100%
+        background_color: primary
+    -
+      parent_uuid: 10000007-0001-4000-a000-000000000001
+      slot: main_slot
+      uuid: 10000007-0001-4000-a000-000000000002
+      component_id: sdc.palcera_theme.card-testimonial
+      inputs:
+        text: 'Working with Meridian Partners was the best decision we made for our business. Alex helped us streamline our operations and we grew faster in the first year than we expected. They actually care about our success.'
+        cite_name: 'Casey Nguyen'
+        cite_text: 'Owner, Harborview Café'
+        media:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: e0000001-0001-4000-a000-000000000004
+            target_type: media
+        align: center
+        style: inverted
+    -
+      uuid: 10000008-0001-4000-a000-000000000001
+      component_id: sdc.palcera_theme.cta
+      inputs:
+        heading_text: "Let's talk about your business"
+        level: 2
+        text: "Book a free 30-minute consultation. We'll review your situation, answer your questions, and see if we're the right fit — no pressure, no obligation."
+        text_align: center
+        background_color: inverted
+    -
+      parent_uuid: 10000008-0001-4000-a000-000000000001
+      slot: actions
+      uuid: 10000008-0001-4000-a000-000000000002
+      component_id: sdc.palcera_theme.button
+      inputs:
+        variant: primary
+        label: 'Book Free Consultation'
+        size: large
+        icon: arrow-right
+        icon_first: false
+        disabled: false
+        href: /contact
+    -
+      parent_uuid: 10000008-0001-4000-a000-000000000001
+      slot: actions
+      uuid: 10000008-0001-4000-a000-000000000003
+      component_id: sdc.palcera_theme.button
+      inputs:
+        variant: primary-inverted
+        label: 'About Our Firm'
+        size: large
+        mobile_width: false
+        icon_first: false
+        disabled: false
+        href: /about
+  path:
+    -
+      alias: /home
+      langcode: en
+  revision_translation_affected:
+    -
+      value: true
+  metatags:
+    -
+      value: '{"description":"[canvas_page:description]","title":"[canvas_page:title] | [site:name]"}'

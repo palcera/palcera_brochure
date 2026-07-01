@@ -1,0 +1,5 @@
+logo:
+  path: 'public://branding/meridian-logo-light.svg'
+  url: ''
+  use_default: false
+scheme: light

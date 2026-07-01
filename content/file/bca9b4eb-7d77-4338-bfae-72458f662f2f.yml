@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: bca9b4eb-7d77-4338-bfae-72458f662f2f
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: meridian-logo-light.svg
+  uri:
+    -
+      value: 'public://branding/meridian-logo-light.svg'
+  filemime:
+    -
+      value: image/svg+xml
+  filesize:
+    -
+      value: 347
+  status:
+    -
+      value: true

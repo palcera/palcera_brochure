@@ -1,0 +1,43 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.article.schema_about
+    - field.field.node.article.schema_abstract
+    - field.field.node.article.schema_article_body
+    - field.field.node.article.schema_article_type
+    - field.field.node.article.schema_author
+    - field.field.node.article.schema_image
+    - field.field.node.article.schema_related_link
+    - field.field.node.article.schema_significant_link
+    - field.field.node.article.schema_subject_of
+    - node.type.article
+  module:
+    - node
+id: node.article
+target_entity_type_id: node
+target_bundle: article
+schema_type: Article
+schema_properties:
+  schema_about: about
+  schema_abstract: abstract
+  schema_article_type: additionalType
+  schema_article_body: articleBody
+  schema_author: author
+  created: dateCreated
+  changed: dateModified
+  title: headline
+  schema_image: image
+  langcode: inLanguage
+  schema_subject_of: subjectOf
+additional_mappings:
+  WebPage:
+    schema_type: WebPage
+    schema_properties:
+      created: dateCreated
+      changed: dateModified
+      langcode: inLanguage
+      title: name
+      schema_image: primaryImageOfPage
+      schema_related_link: relatedLink
+      schema_significant_link: significantLink

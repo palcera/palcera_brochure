@@ -1,0 +1,30 @@
+_meta:
+  version: '1.0'
+  entity_type: crop
+  uuid: 5d2be35d-8612-49e4-8910-59f77597a1f0
+  bundle: focal_point
+  default_langcode: en
+  depends:
+    f0000001-0001-4000-a000-000000000001: file
+default:
+  entity_id:
+    -
+      uuid: f0000001-0001-4000-a000-000000000001
+  entity_type:
+    -
+      value: file
+  uri:
+    -
+      value: 'public://2026-02/hero-background.jpg'
+  x:
+    -
+      value: 1000
+  'y':
+    -
+      value: 667
+  revision_uid:
+    -
+      target_id: 1
+  revision_translation_affected:
+    -
+      value: true

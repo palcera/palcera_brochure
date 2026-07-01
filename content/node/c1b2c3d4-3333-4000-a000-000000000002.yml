@@ -1,0 +1,58 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: c1b2c3d4-3333-4000-a000-000000000002
+  bundle: article
+  default_langcode: en
+  depends:
+    b1b2c3d4-2222-4000-a000-000000000002: node
+    e0000001-0001-4000-a000-000000000009: media
+    a1b2c3d4-1111-4000-a000-000000000003: taxonomy_term
+    a1b2c3d4-1111-4000-a000-000000000004: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'When to bring in outside consultants vs building in-house'
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /articles/when-bring-outside-consultants-vs-building-house
+      langcode: en
+  schema_about:
+    -
+      entity: b1b2c3d4-2222-4000-a000-000000000002
+  schema_abstract:
+    -
+      value: 'Outside expertise gets you moving fast, but some capabilities belong inside your team. Here is how to decide which is which.'
+  schema_article_body:
+    -
+      value: '<p>Every business owner starts out wearing every hat. As the company grows, the question is no longer whether you need help — it is whether to build the capability in-house or bring in outside consultants.</p><h2>When outside consultants make sense</h2><p>Consultants are the right call when the need is specialized, time-boxed, or infrequent: a market entry analysis, a pricing overhaul, a one-time systems selection. You get senior expertise without a permanent salary, and an outside perspective that internal teams rarely have.</p><h2>When to build in-house</h2><p>If the work is continuous and central to how you compete — daily performance management, customer analytics you review every week — it belongs inside the company. Owning the capability compounds: your team learns your business deeper every quarter.</p><h2>The hybrid that usually wins</h2><p>Most growing businesses do best with a hybrid: consultants to design the playbook and transfer the skills, an internal owner to run it. Insist on knowledge transfer as a deliverable, not an afterthought.</p><h2>How to decide</h2><p>Ask three questions: Is this need recurring or episodic? Is it a differentiator or a supporting function? Can we hire and retain this skill at our size? Episodic, supporting, hard-to-retain — that is consultant territory. Recurring, differentiating, retainable — build it in.</p>'
+      format: content_format
+  schema_author:
+    -
+      entity: b1b2c3d4-2222-4000-a000-000000000002
+  schema_image:
+    -
+      entity: e0000001-0001-4000-a000-000000000009
+  schema_tags:
+    -
+      entity: a1b2c3d4-1111-4000-a000-000000000003
+    -
+      entity: a1b2c3d4-1111-4000-a000-000000000004

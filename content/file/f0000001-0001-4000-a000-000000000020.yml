@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: f0000001-0001-4000-a000-000000000020
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: service-strategy.jpg
+  uri:
+    -
+      value: 'public://2026-02/service-strategy.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 352070
+  status:
+    -
+      value: true

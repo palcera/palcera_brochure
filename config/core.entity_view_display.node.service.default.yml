@@ -1,0 +1,105 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.service.field_component_tree
+    - field.field.node.service.field_icon
+    - field.field.node.service.field_metatag
+    - field.field.node.service.schema_description
+    - field.field.node.service.schema_hours_available
+    - field.field.node.service.schema_image
+    - field.field.node.service.schema_related_link
+    - field.field.node.service.schema_service_output
+    - field.field.node.service.schema_service_type
+    - field.field.node.service.schema_significant_link
+    - node.type.service
+  module:
+    - link
+    - text
+    - ui_icons_field
+    - user
+id: node.service.default
+targetEntityType: node
+bundle: service
+mode: default
+content:
+  field_icon:
+    type: icon_formatter
+    label: above
+    settings:
+      icon_settings: {  }
+    third_party_settings: {  }
+    weight: 201
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 200
+    region: content
+  schema_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 17
+    region: content
+  schema_hours_available:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 37
+    region: content
+  schema_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  schema_related_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 95
+    region: content
+  schema_service_output:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 120
+    region: content
+  schema_service_type:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 110
+    region: content
+  schema_significant_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 94
+    region: content
+hidden:
+  field_component_tree: true
+  field_metatag: true
+  search_api_excerpt: true

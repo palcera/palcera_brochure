@@ -1,0 +1,72 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - canvas.component.block.system_branding_block
+    - canvas.component.block.system_menu_block.footer
+    - canvas.component.sdc.palcera_theme.footer
+    - canvas.component.sdc.palcera_theme.text
+    - filter.format.canvas_html_block
+  module:
+    - options
+    - text
+  theme:
+    - palcera_theme
+id: palcera_theme.footer
+region: footer
+theme: palcera_theme
+component_tree:
+  '0:b4ea9fb2-d3fc-428a-9114-bce92069cbab':
+    uuid: b4ea9fb2-d3fc-428a-9114-bce92069cbab
+    component_id: sdc.palcera_theme.footer
+    component_version: d696cea1796b650e
+    inputs:
+      align: true
+  '0:footer_first:0:cc01f585-46ec-48a4-90b6-570277d1f370':
+    parent_uuid: b4ea9fb2-d3fc-428a-9114-bce92069cbab
+    slot: footer_first
+    uuid: cc01f585-46ec-48a4-90b6-570277d1f370
+    component_id: block.system_branding_block
+    component_version: 7d528e00f56b3abf
+    inputs:
+      label: 'Site branding'
+      label_display: '0'
+      use_site_logo: true
+      use_site_name: false
+      use_site_slogan: false
+  '0:footer_first:1:fdcf2eb9-c422-4a13-8467-0407d8c2f127':
+    parent_uuid: b4ea9fb2-d3fc-428a-9114-bce92069cbab
+    slot: footer_first
+    uuid: fdcf2eb9-c422-4a13-8467-0407d8c2f127
+    component_id: block.system_menu_block.footer
+    component_version: 075503dbc228a45c
+    inputs:
+      label: Footer
+      label_display: '0'
+      level: 1
+      depth: null
+      expand_all_items: false
+  '0:footer_last:0:e9f2b3c4-d5e6-4f70-b8c9-d0e1f2a3b4c5':
+    parent_uuid: b4ea9fb2-d3fc-428a-9114-bce92069cbab
+    slot: footer_last
+    uuid: e9f2b3c4-d5e6-4f70-b8c9-d0e1f2a3b4c5
+    component_id: sdc.palcera_theme.text
+    component_version: 16c79c28a4108f9b
+    inputs:
+      text:
+        value: '<p><strong>Contact</strong></p><p><a href="tel:+15551234567">+1-555-0199</a></p><p><a href="mailto:hello@meridianpartners.example">hello@meridianpartners.example</a></p>'
+        format: canvas_html_block
+      text_size: normal
+      text_color: default
+  '0:footer_utility_last:0:a606580b-bd8b-4576-b89e-b9f97ef72d91':
+    parent_uuid: b4ea9fb2-d3fc-428a-9114-bce92069cbab
+    slot: footer_utility_last
+    uuid: a606580b-bd8b-4576-b89e-b9f97ef72d91
+    component_id: sdc.palcera_theme.text
+    component_version: 16c79c28a4108f9b
+    inputs:
+      text:
+        value: '<p>© Copyright 2026 Meridian Partners. All rights reserved.</p>'
+        format: canvas_html_block
+      text_size: text-sm
+      text_color: default

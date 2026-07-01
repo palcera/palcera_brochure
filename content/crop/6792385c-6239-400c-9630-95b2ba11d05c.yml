@@ -1,0 +1,30 @@
+_meta:
+  version: '1.0'
+  entity_type: crop
+  uuid: 6792385c-6239-400c-9630-95b2ba11d05c
+  bundle: focal_point
+  default_langcode: en
+  depends:
+    f0000001-0001-4000-a000-000000000006: file
+default:
+  entity_id:
+    -
+      uuid: f0000001-0001-4000-a000-000000000006
+  entity_type:
+    -
+      value: file
+  uri:
+    -
+      value: 'public://2026-02/person-jordan-lee.jpg'
+  x:
+    -
+      value: 1000
+  'y':
+    -
+      value: 667
+  revision_uid:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true

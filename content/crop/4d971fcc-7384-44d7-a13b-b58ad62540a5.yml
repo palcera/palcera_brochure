@@ -1,0 +1,30 @@
+_meta:
+  version: '1.0'
+  entity_type: crop
+  uuid: 4d971fcc-7384-44d7-a13b-b58ad62540a5
+  bundle: focal_point
+  default_langcode: en
+  depends:
+    f0000001-0001-4000-a000-000000000020: file
+default:
+  entity_id:
+    -
+      uuid: f0000001-0001-4000-a000-000000000020
+  entity_type:
+    -
+      value: file
+  uri:
+    -
+      value: 'public://2026-02/service-strategy.jpg'
+  x:
+    -
+      value: 1000
+  'y':
+    -
+      value: 667
+  revision_uid:
+    -
+      target_id: 1
+  revision_translation_affected:
+    -
+      value: true

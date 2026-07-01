@@ -1,0 +1,44 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - canvas.component.sdc.palcera_theme.card
+    - core.entity_view_mode.node.card
+    - field.field.media.image.field_media_image
+    - field.field.node.article.schema_abstract
+    - field.field.node.article.schema_image
+    - image.style.canvas_parametrized_width
+    - media.type.image
+    - node.type.article
+  module:
+    - file
+    - media
+    - node
+    - options
+id: node.article.card
+content_entity_type_id: node
+content_entity_type_bundle: article
+content_entity_type_view_mode: card
+component_tree:
+  '0:a1e2c3d4-5001-4000-a000-000000000001':
+    uuid: a1e2c3d4-5001-4000-a000-000000000001
+    component_id: sdc.palcera_theme.card
+    component_version: 5b555e53da9c8dff
+    inputs:
+      background: default
+      style: framed
+      orientation: vertical
+      heading_text:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:article␝title␞␟value'
+      level: 3
+      url:
+        sourceType: host-entity-url
+        absolute: true
+      media:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:article␝schema_image␞␟entity␜␜entity:media:image␝field_media_image␞␟{src↠src_with_alternate_widths,alt↠alt,width↠width,height↠height}'
+      text:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:article␝schema_abstract␞␟value'
+exposed_slots: {  }

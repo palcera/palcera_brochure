@@ -1,0 +1,36 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - canvas.component.sdc.palcera_theme.author-byline
+    - core.entity_view_mode.node.byline
+    - field.field.media.image.field_media_image
+    - field.field.node.person.schema_image
+    - field.field.node.person.schema_job_title
+    - image.style.canvas_parametrized_width
+    - media.type.image
+    - node.type.person
+  module:
+    - file
+    - media
+    - node
+id: node.person.byline
+content_entity_type_id: node
+content_entity_type_bundle: person
+content_entity_type_view_mode: byline
+component_tree:
+  '0:a1e2c3d4-5003-4000-a000-000000000001':
+    uuid: a1e2c3d4-5003-4000-a000-000000000001
+    component_id: sdc.palcera_theme.author-byline
+    component_version: c263115fb0954cc9
+    inputs:
+      name:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:person␝title␞␟value'
+      job_title:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:person␝schema_job_title␞␟value'
+      media:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:person␝schema_image␞␟entity␜␜entity:media:image␝field_media_image␞␟{src↠src_with_alternate_widths,alt↠alt,width↠width,height↠height}'
+exposed_slots: {  }

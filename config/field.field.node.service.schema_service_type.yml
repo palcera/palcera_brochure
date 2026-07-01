@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.schema_service_type
+    - node.type.service
+id: node.service.schema_service_type
+field_name: schema_service_type
+entity_type: node
+bundle: service
+label: 'Service type'
+description: "The type of service being offered, e.g. veterans' benefits, emergency relief, etc."
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

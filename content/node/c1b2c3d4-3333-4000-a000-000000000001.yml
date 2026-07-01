@@ -1,0 +1,58 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: c1b2c3d4-3333-4000-a000-000000000001
+  bundle: article
+  default_langcode: en
+  depends:
+    b1b2c3d4-2222-4000-a000-000000000003: node
+    e0000001-0001-4000-a000-000000000008: media
+    a1b2c3d4-1111-4000-a000-000000000001: taxonomy_term
+    a1b2c3d4-1111-4000-a000-000000000002: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: '5 signs your business needs an operations review'
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /articles/5-signs-your-business-needs-operations-review
+      langcode: en
+  schema_about:
+    -
+      entity: b1b2c3d4-2222-4000-a000-000000000003
+  schema_abstract:
+    -
+      value: 'Many growing businesses lose margin to processes that no longer fit their size. Here are five signals that it is time for a structured operations review.'
+  schema_article_body:
+    -
+      value: '<p>Most businesses do not fail from one big mistake — they lose ground slowly, through processes that no longer fit the size they have become. An operations review takes an honest look at how work actually flows through your business and where time and margin are quietly leaking away.</p><h2>1. Growth has outpaced your processes</h2><p>The systems that worked for five people start to strain at fifteen. If every new hire needs weeks of shadowing because nothing is documented, your processes live in people''s heads — and that is a risk.</p><h2>2. You cannot answer basic performance questions quickly</h2><p>If questions like "which service line is most profitable?" take days to answer, your reporting is not keeping up with your decisions.</p><h2>3. The same problems keep coming back</h2><p>Recurring fire drills — missed handoffs, duplicated work, unclear ownership — are symptoms of structural issues, not bad luck.</p><h2>4. Your managers are always busy but throughput is flat</h2><p>When effort rises and output does not, work is being consumed by coordination overhead rather than value delivery.</p><h2>5. You are about to make a big commitment</h2><p>Before a major hire, a new location, or a big system purchase, a review confirms the foundation can support the weight.</p><p>An operations review does not have to be disruptive. A focused engagement of a few weeks typically pays for itself in the first quarter after the changes land.</p>'
+      format: content_format
+  schema_author:
+    -
+      entity: b1b2c3d4-2222-4000-a000-000000000003
+  schema_image:
+    -
+      entity: e0000001-0001-4000-a000-000000000008
+  schema_tags:
+    -
+      entity: a1b2c3d4-1111-4000-a000-000000000001
+    -
+      entity: a1b2c3d4-1111-4000-a000-000000000002

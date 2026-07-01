@@ -1,0 +1,47 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.service.field_component_tree
+    - field.field.node.service.field_icon
+    - field.field.node.service.field_metatag
+    - field.field.node.service.schema_description
+    - field.field.node.service.schema_hours_available
+    - field.field.node.service.schema_image
+    - field.field.node.service.schema_related_link
+    - field.field.node.service.schema_service_output
+    - field.field.node.service.schema_service_type
+    - field.field.node.service.schema_significant_link
+    - node.type.service
+  module:
+    - text
+    - user
+id: node.service.teaser
+targetEntityType: node
+bundle: service
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 200
+    region: content
+  schema_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 17
+    region: content
+hidden:
+  field_component_tree: true
+  field_icon: true
+  field_metatag: true
+  schema_hours_available: true
+  schema_image: true
+  schema_related_link: true
+  schema_service_output: true
+  schema_service_type: true
+  schema_significant_link: true
+  search_api_excerpt: true

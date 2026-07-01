@@ -1,0 +1,146 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - canvas.component.block.system_breadcrumb_block
+    - canvas.component.sdc.palcera_theme.badge
+    - canvas.component.sdc.palcera_theme.button
+    - canvas.component.sdc.palcera_theme.cta
+    - canvas.component.sdc.palcera_theme.heading
+    - canvas.component.sdc.palcera_theme.section
+    - canvas.component.sdc.palcera_theme.text
+    - core.base_field_override.node.service.title
+    - core.entity_view_mode.node.full
+    - field.field.media.image.field_media_image
+    - field.field.node.service.schema_description
+    - field.field.node.service.schema_image
+    - field.field.node.service.schema_service_type
+    - image.style.canvas_parametrized_width
+    - media.type.image
+    - node.type.service
+  module:
+    - file
+    - media
+    - node
+    - options
+id: node.service.full
+content_entity_type_id: node
+content_entity_type_bundle: service
+content_entity_type_view_mode: full
+component_tree:
+  '0:b0000005-0001-4000-a000-000000000001':
+    uuid: b0000005-0001-4000-a000-000000000001
+    component_id: block.system_breadcrumb_block
+    component_version: 0d7e961dd03aa710
+    inputs:
+      label: Breadcrumbs
+      label_display: '0'
+  '1:b0000005-0001-4000-a000-000000000002':
+    uuid: b0000005-0001-4000-a000-000000000002
+    component_id: sdc.palcera_theme.section
+    component_version: a917d5c9be8f2830
+    inputs:
+      width: 100%
+      columns: '100'
+      mobile_columns: '1'
+      margin_block_start: '0'
+      margin_block_end: '0'
+      padding_block_start: '64'
+      padding_block_end: '64'
+      background_color: primary
+      background_media:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:service␝schema_image␞␟entity␜␜entity:media:image␝field_media_image␞␟{src↠src_with_alternate_widths,alt↠alt,width↠width,height↠height}'
+      section_header: true
+      section_footer: false
+  '1:header_slot:0:b0000005-0001-4000-a000-000000000003':
+    parent_uuid: b0000005-0001-4000-a000-000000000002
+    slot: header_slot
+    uuid: b0000005-0001-4000-a000-000000000003
+    component_id: sdc.palcera_theme.badge
+    component_version: 1333d70702cd586b
+    inputs:
+      label:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:service␝schema_service_type␞␟value'
+      style: secondary
+      icon_first: true
+  '1:main_slot:0:b0000005-0001-4000-a000-000000000004':
+    parent_uuid: b0000005-0001-4000-a000-000000000002
+    slot: main_slot
+    uuid: b0000005-0001-4000-a000-000000000004
+    component_id: sdc.palcera_theme.heading
+    component_version: 6e6854ead521fa05
+    inputs:
+      heading_text:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:service␝title␞␟value'
+      level: 1
+      text_size: heading-responsive-5xl
+      text_color: default
+      align: left
+      url: 'No URL'
+  '2:b0000005-0001-4000-a000-000000000005':
+    uuid: b0000005-0001-4000-a000-000000000005
+    component_id: sdc.palcera_theme.section
+    component_version: a917d5c9be8f2830
+    inputs:
+      width: 75%
+      columns: '100'
+      mobile_columns: '1'
+      margin_block_start: '0'
+      margin_block_end: '48'
+      padding_block_start: '0'
+      padding_block_end: '0'
+      section_header: false
+      section_footer: false
+  '2:main_slot:0:b0000005-0001-4000-a000-000000000006':
+    parent_uuid: b0000005-0001-4000-a000-000000000005
+    slot: main_slot
+    uuid: b0000005-0001-4000-a000-000000000006
+    component_id: sdc.palcera_theme.text
+    component_version: 16c79c28a4108f9b
+    inputs:
+      text:
+        sourceType: entity-field
+        expression: 'ℹ︎␜entity:node:service␝schema_description␞␟processed'
+      text_size: normal
+      text_color: default
+  '3:actions:0:b0000005-0001-4000-a000-000000000008':
+    parent_uuid: b0000005-0001-4000-a000-000000000007
+    slot: actions
+    uuid: b0000005-0001-4000-a000-000000000008
+    component_id: sdc.palcera_theme.button
+    component_version: 8c253a9827f0ca84
+    inputs:
+      variant: primary
+      label: 'Book Free Consultation'
+      href: /contact
+      size: large
+      icon: arrow-right
+      icon_first: false
+      disabled: false
+  '3:actions:1:b0000005-0001-4000-a000-000000000009':
+    parent_uuid: b0000005-0001-4000-a000-000000000007
+    slot: actions
+    uuid: b0000005-0001-4000-a000-000000000009
+    component_id: sdc.palcera_theme.button
+    component_version: 8c253a9827f0ca84
+    inputs:
+      variant: primary-inverted
+      label: 'View All Services'
+      href: /services
+      size: large
+      icon_first: false
+      disabled: false
+  '3:b0000005-0001-4000-a000-000000000007':
+    uuid: b0000005-0001-4000-a000-000000000007
+    component_id: sdc.palcera_theme.cta
+    component_version: 8a4b09426767fa38
+    inputs:
+      heading_text: 'Ready to get started?'
+      level: 2
+      text: "Book a free 30-minute consultation. We'll review your situation, answer your questions, and see if we're the right fit."
+      text_align: center
+      background_color: inverted
+exposed_slots: {  }

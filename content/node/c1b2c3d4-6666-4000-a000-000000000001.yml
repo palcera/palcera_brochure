@@ -1,0 +1,47 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: c1b2c3d4-6666-4000-a000-000000000001
+  bundle: service
+  default_langcode: en
+  depends:
+    e0000001-0001-4000-a000-000000000020: media
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Strategy Consulting'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /strategy-consulting
+      langcode: en
+  field_icon:
+    -
+      target_id: 'phosphor:calculator'
+  schema_description:
+    -
+      value: '<p>Clear, actionable strategy grounded in your numbers. We help you set priorities, position against competitors, and build a plan your team can execute.</p>'
+      format: content_format
+  schema_image:
+    -
+      entity: e0000001-0001-4000-a000-000000000020
+  schema_service_type:
+    -
+      value: 'Strategy & Planning'

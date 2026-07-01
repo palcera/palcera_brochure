@@ -1,0 +1,30 @@
+_meta:
+  version: '1.0'
+  entity_type: crop
+  uuid: 4bf7345a-af8f-4194-b40b-3d2238bf30f0
+  bundle: focal_point
+  default_langcode: en
+  depends:
+    f0000001-0001-4000-a000-000000000002: file
+default:
+  entity_id:
+    -
+      uuid: f0000001-0001-4000-a000-000000000002
+  entity_type:
+    -
+      value: file
+  uri:
+    -
+      value: 'public://2026-02/feature-consultant.jpg'
+  x:
+    -
+      value: 1000
+  'y':
+    -
+      value: 667
+  revision_uid:
+    -
+      target_id: 1
+  revision_translation_affected:
+    -
+      value: true

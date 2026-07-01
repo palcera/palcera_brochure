@@ -1,0 +1,50 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: d1b2c3d4-4444-4000-a000-000000000001
+  bundle: general_page
+  default_langcode: en
+  depends:
+    e0000001-0001-4000-a000-00000000000a: media
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'About us'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /pages/about-us
+      langcode: en
+  schema_image:
+    -
+      entity: e0000001-0001-4000-a000-00000000000a
+  schema_related_link:
+    -
+      uri: 'internal:/team/alex-morgan'
+      title: 'Meet Alex Morgan'
+      options: {  }
+    -
+      uri: 'internal:/team/james-chen'
+      title: 'Meet Jordan Lee'
+      options: {  }
+  schema_text:
+    -
+      value: '<p>Meridian Partners is an independent consulting firm serving small businesses and their owners across the region. We provide strategy, operations, and growth advisory services with the personal attention that growing companies deserve.</p><p>We believe good advice starts with listening. Every engagement begins with understanding how your business actually works — not with a template. Our consultants stay with you from diagnosis through execution, and we measure our success by the results you keep after we leave.</p><p>Today our team serves hundreds of clients across dozens of industries, from family-run shops to fast-growing professional firms. What has not changed is the way we work: senior people, plain language, and recommendations we would stake our own money on.</p>'
+      format: content_format

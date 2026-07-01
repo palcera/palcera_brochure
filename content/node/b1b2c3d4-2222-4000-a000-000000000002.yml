@@ -1,0 +1,73 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: b1b2c3d4-2222-4000-a000-000000000002
+  bundle: person
+  default_langcode: en
+  depends:
+    e0000001-0001-4000-a000-000000000006: media
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Jordan Lee'
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /profiles/jordan-lee
+      langcode: en
+  schema_description:
+    -
+      value: '<p>Jordan is a senior consultant who specializes in business planning and performance measurement for growing companies. Jordan helps clients make informed decisions through clear analysis and practical recommendations.</p>'
+      format: content_format
+  schema_email:
+    -
+      value: jordan@meridianpartners.example
+  schema_family_name:
+    -
+      value: Lee
+  schema_given_name:
+    -
+      value: Jordan
+  schema_image:
+    -
+      entity: e0000001-0001-4000-a000-000000000006
+  schema_job_title:
+    -
+      value: 'Senior Consultant'
+  schema_knows_language:
+    -
+      value: English
+    -
+      value: Mandarin
+  schema_same_as:
+    -
+      uri: 'https://linkedin.com/in/james-chen-example'
+      title: LinkedIn
+      options: {  }
+    -
+      uri: 'https://github.com/jameschen-example'
+      title: GitHub
+      options: {  }
+  schema_telephone:
+    -
+      value: +1-555-0102
+  schema_works_for:
+    -
+      value: 'Meridian Partners'
