@@ -52,4 +52,9 @@ in your project.
 ## License
 
 GPL-2.0-or-later. See [LICENSE.txt](LICENSE.txt). Demo image licensing is documented in
-[LICENSES-images.md](LICENSES-images.md).
+[LICENSES-images.md](LICENSES-images.md). Security policy: [SECURITY.md](SECURITY.md).
+
+A CycloneDX software bill of materials ([sbom.cdx.json](sbom.cdx.json)) is included as an
+optional convenience — it is **not** a Drupal CMS marketplace requirement (verified
+2026-07-02). It was generated with `cyclonedx/cyclonedx-php-composer` from an installed
+build and reflects the dependency tree at generation time.
