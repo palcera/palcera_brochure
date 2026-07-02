@@ -114,3 +114,11 @@ underlying `palcera_theme` markup (logo link, breadcrumb home link) and are queu
 upstream theme fixes; both prevent a clean "fully conformant" claim for the rendered
 site until the theme lands those fixes. All other Feb-audit theme concerns have been
 re-verified as resolved.
+
+## Addendum — 2026-07-02 re-scan (theme 1.0.0-beta3)
+
+The two serious `link-name` findings documented below (logo link, breadcrumb home link)
+were fixed in `palcera/palcera_theme` 1.0.0-beta3. Re-scan with the identical method
+(axe-core 4.10.2, same 10 pages, wcag2a/wcag2aa/wcag21a/wcag21aa/wcag22aa + best-practice):
+**zero violations of any impact level on all 10 pages.** The template's composer
+constraint (`^1.0.0-beta2`) resolves to 1.0.0-beta3+ automatically.
