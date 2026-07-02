@@ -49,6 +49,20 @@ in your project.
 2. Edit or delete the demo people, services, and articles.
 3. Review `recommended.yml` add-ons in the Project Browser.
 
+## Rebranding (colors, typography, design tokens)
+
+The Palcera theme is fully token-driven: every color, font, radius, and shadow is a CSS
+custom property in a shadcn/ui-compatible sheet. To rebrand **without rebuilding anything**:
+
+1. Copy `web/themes/contrib/palcera_theme/src/theme.css` to your web root (next to
+   `index.php`).
+2. Edit the values — `--primary`, `--accent`, `--font-sans`, `--radius`, etc. Generators
+   like [tweakcn](https://tweakcn.com) produce compatible palettes.
+3. Clear caches. Every component picks up the new tokens immediately.
+
+Swap the logo and favicon under **Appearance → Palcera** settings (the demo ships neutral
+"Meridian Partners" assets you'll want to replace).
+
 ## License
 
 GPL-2.0-or-later. See [LICENSE.txt](LICENSE.txt). Demo image licensing is documented in
