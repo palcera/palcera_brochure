@@ -1,3 +1,7 @@
+favicon:
+  mimetype: image/svg+xml
+  path: 'public://branding/meridian-favicon.svg'
+  use_default: false
 logo:
   path: 'public://branding/meridian-logo-light.svg'
   url: ''

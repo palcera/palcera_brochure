@@ -2,24 +2,24 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.person.schema_additional_name
-    - field.field.node.person.schema_description
-    - field.field.node.person.schema_email
-    - field.field.node.person.schema_family_name
-    - field.field.node.person.schema_given_name
-    - field.field.node.person.schema_image
-    - field.field.node.person.schema_job_title
-    - field.field.node.person.schema_knows_language
-    - field.field.node.person.schema_member_of
-    - field.field.node.person.schema_related_link
-    - field.field.node.person.schema_same_as
-    - field.field.node.person.schema_significant_link
-    - field.field.node.person.schema_telephone
-    - field.field.node.person.schema_works_for
-    - node.type.person
-    - schemadotorg.schemadotorg_mapping_type.node
+  - field.field.node.person.schema_additional_name
+  - field.field.node.person.schema_description
+  - field.field.node.person.schema_email
+  - field.field.node.person.schema_family_name
+  - field.field.node.person.schema_given_name
+  - field.field.node.person.schema_image
+  - field.field.node.person.schema_job_title
+  - field.field.node.person.schema_knows_language
+  - field.field.node.person.schema_member_of
+  - field.field.node.person.schema_related_link
+  - field.field.node.person.schema_same_as
+  - field.field.node.person.schema_significant_link
+  - field.field.node.person.schema_telephone
+  - field.field.node.person.schema_works_for
+  - node.type.person
+  - schemadotorg.schemadotorg_mapping_type.node
   module:
-    - node
+  - node
 id: node.person
 target_entity_type_id: node
 target_bundle: person

@@ -2,17 +2,17 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.service.schema_description
-    - field.field.node.service.schema_hours_available
-    - field.field.node.service.schema_image
-    - field.field.node.service.schema_related_link
-    - field.field.node.service.schema_service_output
-    - field.field.node.service.schema_service_type
-    - field.field.node.service.schema_significant_link
-    - node.type.service
-    - schemadotorg.schemadotorg_mapping_type.node
+  - field.field.node.service.schema_description
+  - field.field.node.service.schema_hours_available
+  - field.field.node.service.schema_image
+  - field.field.node.service.schema_related_link
+  - field.field.node.service.schema_service_output
+  - field.field.node.service.schema_service_type
+  - field.field.node.service.schema_significant_link
+  - node.type.service
+  - schemadotorg.schemadotorg_mapping_type.node
   module:
-    - node
+  - node
 id: node.service
 target_entity_type_id: node
 target_bundle: service

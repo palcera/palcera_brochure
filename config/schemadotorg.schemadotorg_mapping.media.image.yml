@@ -2,11 +2,11 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.media.image.field_media_image
-    - media.type.image
-    - schemadotorg.schemadotorg_mapping_type.media
+  - field.field.media.image.field_media_image
+  - media.type.image
+  - schemadotorg.schemadotorg_mapping_type.media
   module:
-    - media
+  - media
 id: media.image
 target_entity_type_id: media
 target_bundle: image
@@ -18,4 +18,4 @@ schema_properties:
   langcode: inLanguage
   name: name
   thumbnail: thumbnail
-additional_mappings: {  }
+additional_mappings: {}

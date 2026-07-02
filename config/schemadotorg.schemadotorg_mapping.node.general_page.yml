@@ -2,14 +2,14 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.general_page.schema_image
-    - field.field.node.general_page.schema_related_link
-    - field.field.node.general_page.schema_significant_link
-    - field.field.node.general_page.schema_text
-    - node.type.general_page
-    - schemadotorg.schemadotorg_mapping_type.node
+  - field.field.node.general_page.schema_image
+  - field.field.node.general_page.schema_related_link
+  - field.field.node.general_page.schema_significant_link
+  - field.field.node.general_page.schema_text
+  - node.type.general_page
+  - schemadotorg.schemadotorg_mapping_type.node
   module:
-    - node
+  - node
 id: node.general_page
 target_entity_type_id: node
 target_bundle: general_page
@@ -23,4 +23,4 @@ schema_properties:
   schema_related_link: relatedLink
   schema_significant_link: significantLink
   schema_text: text
-additional_mappings: {  }
+additional_mappings: {}
