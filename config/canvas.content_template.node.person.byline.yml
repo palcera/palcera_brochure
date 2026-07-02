@@ -22,7 +22,7 @@ component_tree:
   '0:a1e2c3d4-5003-4000-a000-000000000001':
     uuid: a1e2c3d4-5003-4000-a000-000000000001
     component_id: sdc.palcera_theme.author-byline
-    component_version: c263115fb0954cc9
+    component_version: 4997aa2934e677ea
     inputs:
       name:
         sourceType: entity-field
