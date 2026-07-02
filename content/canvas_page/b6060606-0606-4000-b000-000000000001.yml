@@ -75,7 +75,7 @@ default:
         lazy: false
   path:
     -
-      alias: /pages/contact-us
+      alias: /contact
       langcode: en
   revision_translation_affected:
     -

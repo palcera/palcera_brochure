@@ -33,7 +33,7 @@ default:
       value: published
   path:
     -
-      alias: /pages/about-us
+      alias: /about
       langcode: en
   schema_image:
     -

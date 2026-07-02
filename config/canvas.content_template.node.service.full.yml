@@ -90,7 +90,7 @@ component_tree:
       mobile_columns: '1'
       margin_block_start: '0'
       margin_block_end: '48'
-      padding_block_start: '48'
+      padding_block_start: '32'
       padding_block_end: '32'
       section_header: false
       section_footer: false

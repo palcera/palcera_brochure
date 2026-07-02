@@ -4,6 +4,8 @@ _meta:
   uuid: a0a0a0a0-ae00-4000-a000-000000000013
   bundle: menu_link_content
   default_langcode: en
+  depends:
+    b6060606-0606-4000-b000-000000000001: canvas_page
 default:
   enabled:
     -
@@ -16,9 +18,9 @@ default:
       value: footer
   link:
     -
-      uri: 'internal:/contact'
       title: ''
       options: {  }
+      target_uuid: b6060606-0606-4000-b000-000000000001
   external:
     -
       value: false
