@@ -32,6 +32,7 @@ default:
     -
       alias: /about
       langcode: en
+      pathauto: 0
   schema_image:
     -
       entity: e0000001-0001-4000-a000-00000000000a

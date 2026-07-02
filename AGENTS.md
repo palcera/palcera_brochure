@@ -51,3 +51,8 @@ DDEV project config lives in `.ddev/config.yaml`. Use `.ddev/config.local.yaml` 
   the value is NOT part of the version hash (ValidationTest-verified), so a plain string
   swap is safe. Proper fix is upstream: neutralize `examples:` in palcera_theme's
   author-byline component (queued).
+- **Post-export patch #3 (required):** add `pathauto: 0` to the About node's `path` item in
+  its `content/node/*.yml` (alias `/about`). The exporter drops the pathauto flag, and without
+  it the import lets pathauto overwrite the alias with `/pages/about-us` on fresh installs.
+  (The /contact alias needs no patch — canvas pages have no pathauto pattern.) Exporter-gap
+  upstream candidate.
