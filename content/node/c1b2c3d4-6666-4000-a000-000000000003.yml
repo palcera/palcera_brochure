@@ -40,7 +40,7 @@ default:
       target_id: 'phosphor:trend-up'
   schema_description:
     -
-      value: '<p>Market analysis, capacity forecasting, and expansion planning to help you make informed decisions as your business grows.</p>'
+      value: '<p>Market analysis, capacity forecasting, and expansion planning for the next stage. We pressure-test growth options against your real constraints and build the case for the ones worth funding. Decisions get made with evidence instead of gut feel.</p>'
       format: content_format
   schema_image:
     -

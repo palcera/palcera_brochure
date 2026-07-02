@@ -1,5 +1,5 @@
 {
-    "name": "palcera/palcera_brochure",
+    "name": "drupal/palcera_brochure",
     "description": "A polished brochure site template for Drupal CMS: services, team, articles, and a 9-section Canvas home page, with a Schema.org content model, SEO defaults, search, and replaceable demo content.",
     "type": "drupal-recipe",
     "license": "GPL-2.0-or-later",

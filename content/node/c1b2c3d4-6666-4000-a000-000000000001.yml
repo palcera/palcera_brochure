@@ -40,7 +40,7 @@ default:
       target_id: 'phosphor:calculator'
   schema_description:
     -
-      value: '<p>Clear, actionable strategy grounded in your numbers. We help you set priorities, position against competitors, and build a plan your team can execute.</p>'
+      value: '<p>Clear, actionable strategy grounded in your numbers. We help you set priorities, position against competitors, and build a plan your team can actually execute. Every engagement ends with a concrete roadmap, owners, and measures — not a slide deck that gathers dust.</p>'
       format: content_format
   schema_image:
     -

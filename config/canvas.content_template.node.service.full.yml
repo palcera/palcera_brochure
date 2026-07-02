@@ -90,8 +90,8 @@ component_tree:
       mobile_columns: '1'
       margin_block_start: '0'
       margin_block_end: '48'
-      padding_block_start: '0'
-      padding_block_end: '0'
+      padding_block_start: '48'
+      padding_block_end: '32'
       section_header: false
       section_footer: false
   '2:main_slot:0:b0000005-0001-4000-a000-000000000006':

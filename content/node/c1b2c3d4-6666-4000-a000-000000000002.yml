@@ -40,7 +40,7 @@ default:
       target_id: 'phosphor:currency-dollar'
   schema_description:
     -
-      value: '<p>Streamlined processes and organized workflows every month. Process mapping, vendor reviews, and performance tracking so you can focus on running your business.</p>'
+      value: '<p>Streamlined processes and organized workflows, reviewed every month. We map how work really moves through your business, fix the handoffs that leak time, and set up performance tracking. You stay focused on customers while operations quietly get easier.</p>'
       format: content_format
   schema_image:
     -
