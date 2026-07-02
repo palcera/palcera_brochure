@@ -31,7 +31,7 @@ DDEV project config lives in `.ddev/config.yaml`. Use `.ddev/config.local.yaml` 
 
 ## Template-specific notes
 
-- Package: `drupal/palcera_brochure` — brochure site template seeded from the palcera_base
+- Package: `palcera/palcera_brochure` — brochure site template seeded from the palcera_base
   content model (Schema.org via schemadotorg) and the palcera_theme (Mercury-generated,
   standalone; requires `drupal/cva`, works with Canvas).
 - Demo brand is the fictional consultancy "Meridian Partners"; the theme's default logo is

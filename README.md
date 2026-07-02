@@ -36,7 +36,7 @@ Add the template to a Drupal CMS project and install the site using this recipe:
 composer config minimum-stability dev
 composer config prefer-stable true
 
-composer require drupal/palcera_brochure
+composer require palcera/palcera_brochure
 drush site:install --site-name="My Site" recipes/palcera_brochure
 ```
 
