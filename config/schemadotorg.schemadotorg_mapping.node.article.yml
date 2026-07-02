@@ -2,19 +2,19 @@ langcode: en
 status: true
 dependencies:
   config:
-  - field.field.node.article.schema_about
-  - field.field.node.article.schema_abstract
-  - field.field.node.article.schema_article_body
-  - field.field.node.article.schema_article_type
-  - field.field.node.article.schema_author
-  - field.field.node.article.schema_image
-  - field.field.node.article.schema_related_link
-  - field.field.node.article.schema_significant_link
-  - field.field.node.article.schema_subject_of
-  - node.type.article
-  - schemadotorg.schemadotorg_mapping_type.node
+    - field.field.node.article.schema_about
+    - field.field.node.article.schema_abstract
+    - field.field.node.article.schema_article_body
+    - field.field.node.article.schema_article_type
+    - field.field.node.article.schema_author
+    - field.field.node.article.schema_image
+    - field.field.node.article.schema_related_link
+    - field.field.node.article.schema_significant_link
+    - field.field.node.article.schema_subject_of
+    - node.type.article
+    - schemadotorg.schemadotorg_mapping_type.node
   module:
-  - node
+    - node
 id: node.article
 target_entity_type_id: node
 target_bundle: article

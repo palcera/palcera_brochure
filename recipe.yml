@@ -341,7 +341,7 @@ config:
         slogan: ''
         page:
           403: /user/login
-          404: ''
+          404: /404
           front: /home
         admin_compact_mode: false
         weight_select_max: 100

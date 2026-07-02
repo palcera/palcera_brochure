@@ -1,21 +1,21 @@
 seckit_xss:
   csp:
-    checkbox: false
+    checkbox: true
     vendor-prefix:
       x: false
       webkit: false
-    report-only: false
-    default-src: ''
-    script-src: ''
+    report-only: true
+    default-src: "'self'"
+    script-src: "'self'"
     object-src: ''
-    style-src: ''
-    img-src: ''
+    style-src: "'self' 'unsafe-inline'"
+    img-src: "'self' data:"
     media-src: ''
     frame-src: ''
     frame-ancestors: ''
     child-src: ''
-    font-src: ''
-    connect-src: ''
+    font-src: "'self' data:"
+    connect-src: "'self'"
     report-uri: /report-csp-violation
     upgrade-req: false
     policy-uri: ''

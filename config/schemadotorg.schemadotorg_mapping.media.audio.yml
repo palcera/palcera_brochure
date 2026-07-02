@@ -2,11 +2,11 @@ langcode: en
 status: true
 dependencies:
   config:
-  - field.field.media.audio.field_media_audio_file
-  - media.type.audio
-  - schemadotorg.schemadotorg_mapping_type.media
+    - field.field.media.audio.field_media_audio_file
+    - media.type.audio
+    - schemadotorg.schemadotorg_mapping_type.media
   module:
-  - media
+    - media
 id: media.audio
 target_entity_type_id: media
 target_bundle: audio
@@ -17,4 +17,4 @@ schema_properties:
   changed: dateModified
   langcode: inLanguage
   name: name
-additional_mappings: {}
+additional_mappings: {  }

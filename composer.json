@@ -1,9 +1,9 @@
 {
     "name": "drupal/palcera_brochure",
     "description": "A polished brochure site template for Drupal CMS: services, team, articles, and a 9-section Canvas home page, with a Schema.org content model, SEO defaults, search, and replaceable demo content.",
+    "homepage": "https://github.com/palcera/palcera_brochure",
     "type": "drupal-recipe",
     "license": "GPL-2.0-or-later",
-    "homepage": "https://github.com/palcera/palcera_brochure",
     "require": {
         "drupal/core": "^11.4.0",
         "drupal/antibot": "^2.0.5",

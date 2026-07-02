@@ -28,6 +28,9 @@ default:
   revision_translation_affected:
     -
       value: true
+  moderation_state:
+    -
+      value: published
   path:
     -
       alias: /profiles/jordan-lee
@@ -58,7 +61,7 @@ default:
       value: Mandarin
   schema_same_as:
     -
-      uri: 'https://linkedin.com/in/james-chen-example'
+      uri: 'https://linkedin.com/in/jordan-lee-example'
       title: LinkedIn
       options: {  }
     -
