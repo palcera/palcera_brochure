@@ -45,7 +45,7 @@ DDEV project config lives in `.ddev/config.yaml`. Use `.ddev/config.local.yaml` 
   `schemadotorg.schemadotorg_mapping_type.<entity>` entry to each
   `schemadotorg.schemadotorg_mapping.*.yml` `dependencies.config` — the alpha
   module omits it and flat-recipe install fails without it.
-- **Post-export patch #2 (required):** re-set `value: 'Alex Morgan'` in
+- **Post-export patch #2 (RETIRED 2026-07-02 — palcera_theme 1.0.0-beta3 neutralized the SDC examples; exports from a beta3+ scratch site regenerate neutral values. Historical note):** re-set `value: 'Alex Morgan'` in
   `config/canvas.component.sdc.palcera_theme.author-byline.yml` (default_value). Canvas
   regenerates this from the theme SDC's `examples:` ("Elena Martinez") on every export;
   the value is NOT part of the version hash (ValidationTest-verified), so a plain string

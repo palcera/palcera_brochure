@@ -55,6 +55,10 @@ jobs:
         run: |
           ddev composer repository add source path source
           ddev composer config allow-plugins.drupal/site_template_helper true
+          # This template carries pre-stable dependencies (schemadotorg alpha,
+          # webform RC, palcera_theme beta) — allow them, prefer stable otherwise.
+          ddev composer config minimum-stability dev
+          ddev composer config prefer-stable true
           ddev composer require --update-with-all-dependencies "$PACKAGE_NAME:@dev"
 
       - name: Run tests
