@@ -62,4 +62,8 @@ jobs:
           ddev composer require --update-with-all-dependencies "$PACKAGE_NAME:@dev"
 
       - name: Run tests
-        run: ddev exec phpunit --configuration=./web/core ./recipes/$(basename $PACKAGE_NAME)
+        # Run the tests from the git checkout ('source'), not the installed copy:
+        # composer's mirrored path-repo honors .gitattributes export-ignore, which
+        # strips /tests from the installed package — phpunit would silently pass
+        # with "No tests executed". --fail-on-empty-test-suite guards against that.
+        run: ddev exec phpunit --configuration=./web/core --fail-on-empty-test-suite ./source/tests
