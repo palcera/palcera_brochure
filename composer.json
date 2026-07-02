@@ -71,7 +71,7 @@
         "drupal/yoast_seo": "^2.2.0",
         "drupal/easy_email_theme": "^1.1.0",
         "drupal/gin": "^5.0.15",
-        "palcera/palcera_theme": "^1.0.0-beta2"
+        "palcera/palcera_theme": "^1.0.0-beta3"
     },
     "config": {
         "allow-plugins": {
