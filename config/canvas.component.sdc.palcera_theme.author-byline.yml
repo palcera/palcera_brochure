@@ -26,7 +26,7 @@ versioned_properties:
           field_widget: string_textfield
           default_value:
             -
-              value: 'Elena Martinez'
+              value: 'Alex Morgan'
           expression: ℹ︎string␟value
         job_title:
           required: false
