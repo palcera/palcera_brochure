@@ -16,8 +16,9 @@ execute — nothing has been submitted, pushed, or published anywhere.**
 - [x] `SECURITY.md` maintenance commitment; optional `sbom.cdx.json` (CycloneDX 1.5 — NOT required)
 
 ## Your steps
-1. **Confirm two provenance items:** `login-wallpaper.png` (documented as AI-created — inferred,
-   please confirm); demo photos documented per your 2026-07-01 confirmation.
+1. **Provenance: RESOLVED.** `login-wallpaper.png` verified byte-identical (md5) to the upstream
+   `drupal_cms_admin_ui` asset — it is Drupal CMS's own GPL wallpaper swept in by site:export,
+   documented as such in LICENSES-images.md. Demo photos documented per your 2026-07-01 confirmation.
 2. **Decide hosting:** GitHub + Packagist under `palcera/` is explicitly permitted (GET-STARTED.md).
    Create the GitHub repo, push, publish on Packagist. (Or drupal.org project — then the composer
    name must become `drupal/palcera_brochure`.)

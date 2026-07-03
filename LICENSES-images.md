@@ -31,7 +31,7 @@ likeness, no reserved rights. Distributed under the package license (GPL-2.0-or-
 | `content/file/testimonial-casey-nguyen.jpg` | Testimonial (fictional) | AI-generated for this project, Magnific-enhanced | GPL-2.0-or-later (with package) |
 | `content/file/article-consultants-vs-inhouse.jpg` | Article image | AI-generated for this project, Magnific-enhanced | GPL-2.0-or-later (with package) |
 | `content/file/article-operations-review.jpg` | Article image | AI-generated for this project, Magnific-enhanced | GPL-2.0-or-later (with package) |
-| `content/file/login-wallpaper.png` | Gin login wallpaper | AI-generated for this project, part of the same imagery set | GPL-2.0-or-later (with package) |
+| `content/file/login-wallpaper.png` | Gin login wallpaper | Upstream Drupal CMS asset (ships in `drupal_cms_admin_ui`; byte-identical, redistributed unmodified — same practice as the Haven template) | GPL-2.0-or-later (upstream Drupal CMS) |
 
 The people are fictional composites; the names ("Alex Morgan", "Jordan Lee", "Sam Rivera",
 "Casey Nguyen") belong to the fictional demo company **Meridian Partners** and depict no
