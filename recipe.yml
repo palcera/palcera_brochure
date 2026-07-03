@@ -539,3 +539,8 @@ config:
 extra:
   recipe_installer_kit:
     finish_url: '/admin/dashboard/welcome'
+  drupal_cms_installer:
+    creator: Palcera
+    links:
+      - url: 'https://github.com/palcera/palcera_brochure'
+        text: 'Learn more'

@@ -56,3 +56,8 @@ DDEV project config lives in `.ddev/config.yaml`. Use `.ddev/config.local.yaml` 
   it the import lets pathauto overwrite the alias with `/pages/about-us` on fresh installs.
   (The /contact alias needs no patch — canvas pages have no pathauto pattern.) Exporter-gap
   upstream candidate.
+- **Post-export patch #4 (required):** re-add the `drupal_cms_installer` block under `extra:`
+  in recipe.yml (`creator: Palcera` + `links:` Learn more → GitHub repo; add a Demo link when a
+  Tugboat preview URL exists). `site:export` regenerates recipe.yml and only preserves what the
+  identity patch restores; the installer reads this via `$recipe->getExtra('drupal_cms_installer')`
+  to show creator + links on the template-picker screen.
