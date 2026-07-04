@@ -18,7 +18,7 @@ tags:
   og_type: website
   og_updated_time: '[node:changed:custom:c]'
   og_url: '[current-page:url:absolute]'
-  referrer: unsafe-url
+  referrer: strict-origin-when-cross-origin
   rights: 'Copyright © All rights reserved.'
   shortlink: '[site:url]'
   title: '[node:field_seo_title|node:title] | [site:name]'

@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tags
+  module:
+    - taxonomy
+id: taxonomy_term_tags
+label: 'Tag pages'
+type: 'canonical_entities:taxonomy_term'
+pattern: '/tags/[term:name]'
+selection_criteria:
+  9f2b8a44-3c5d-4a10-9c3d-2b7e41aa6001:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      tags: tags
+selection_logic: and
+weight: -5
+relationships: {  }

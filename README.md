@@ -47,7 +47,7 @@ in your project.
 
 1. Replace the demo company name, contact details, and logo (Appearance → Palcera settings).
 2. Edit or delete the demo people, services, and articles.
-3. Review `recommended.yml` add-ons in the Project Browser.
+3. Browse add-ons in the Project Browser (`recommended.yml` is an optional curated-list stub — unused until stable Drupal CMS 2.x add-on recipes exist to recommend).
 
 ## Rebranding (colors, typography, design tokens)
 

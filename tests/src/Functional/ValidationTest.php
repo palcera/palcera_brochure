@@ -64,6 +64,61 @@ class ValidationTest extends BrowserTestBase {
     // in content templates, page regions, patterns, landing pages, etc. This
     // method checks for that.
     $this->assertCanvasComponentsAreIncluded();
+
+    $this->assertPagesRender();
+    $this->assertSearchPageHasInput();
+    $this->assertSocialMetatags();
+  }
+
+  /**
+   * Checks that every shipped page path renders for anonymous users.
+   */
+  protected function assertPagesRender(): void {
+    $paths = [
+      '/home',
+      '/pages/about-us',
+      '/services',
+      '/growth-planning',
+      '/team',
+      '/profiles/alex-morgan',
+      '/articles',
+      '/articles/5-signs-your-business-needs-operations-review',
+      '/contact',
+      '/404',
+    ];
+    foreach ($paths as $path) {
+      $this->drupalGet($path);
+      $this->assertSession()->statusCodeEquals(200);
+    }
+  }
+
+  /**
+   * Checks that /search offers a usable keyword input out of the box.
+   */
+  protected function assertSearchPageHasInput(): void {
+    $this->drupalGet('/search');
+    $this->assertSession()->statusCodeEquals(200);
+    $this->assertSession()->elementExists('css', 'input[name="keywords"]');
+  }
+
+  /**
+   * Checks social/SEO metatags on the primary content types.
+   */
+  protected function assertSocialMetatags(): void {
+    // Service pages must not fall back to the generic og:type and must emit a
+    // canonical og:image (og:image:secure_url alone is not read by crawlers).
+    $this->drupalGet('/growth-planning');
+    $this->assertSession()->elementAttributeContains('css', 'meta[property="og:type"]', 'content', 'website');
+    $this->assertSession()->elementExists('css', 'meta[property="og:image"]');
+    $this->assertSession()->elementExists('css', 'meta[property="og:description"]');
+    $this->assertSession()->elementExists('css', 'meta[name="description"]');
+
+    $this->drupalGet('/articles/5-signs-your-business-needs-operations-review');
+    $this->assertSession()->elementAttributeContains('css', 'meta[property="og:type"]', 'content', 'article');
+    $this->assertSession()->elementExists('css', 'meta[property="og:image"]');
+
+    $this->drupalGet('/profiles/alex-morgan');
+    $this->assertSession()->elementAttributeContains('css', 'meta[property="og:type"]', 'content', 'profile');
   }
 
   /**

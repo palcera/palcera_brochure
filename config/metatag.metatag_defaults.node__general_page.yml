@@ -1,7 +1,7 @@
 langcode: en
 status: true
 dependencies: {  }
-id: node--general_page
+id: node__general_page
 label: 'Content: General Page'
 tags:
   description: '[node:field_seo_description|node:schema_text]'

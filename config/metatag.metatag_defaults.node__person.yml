@@ -1,0 +1,12 @@
+langcode: en
+status: true
+dependencies: {  }
+id: node__person
+label: 'Content: Person'
+tags:
+  description: '[node:field_seo_description|node:schema_description]'
+  og_description: '[node:field_seo_description|node:schema_description]'
+  og_type: profile
+  twitter_cards_description: '[node:field_seo_description|node:schema_description]'
+  profile_first_name: '[node:schema_given_name]'
+  profile_last_name: '[node:schema_family_name]'

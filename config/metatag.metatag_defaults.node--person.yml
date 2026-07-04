@@ -1,9 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-id: node--person
-label: 'Content: Person'
-tags:
-  og_type: profile
-  profile_first_name: '[node:schema_given_name]'
-  profile_last_name: '[node:schema_family_name]'

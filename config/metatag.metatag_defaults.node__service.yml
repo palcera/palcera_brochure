@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: node__service
+label: 'Content: Service'
+tags:
+  description: '[node:field_seo_description|node:schema_description]'
+  og_description: '[node:field_seo_description|node:schema_description]'
+  og_type: website
+  twitter_cards_description: '[node:field_seo_description|node:schema_description]'
