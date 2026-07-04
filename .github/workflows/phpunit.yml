@@ -35,12 +35,20 @@ jobs:
           ddev config --web-environment-add='SIMPLETEST_BASE_URL=$DDEV_PRIMARY_URL'
           ddev config --web-environment-add='SIMPLETEST_DB=$DDEV_DATABASE_FAMILY://db:db@db/db'
 
-          # The functional page sweep renders heavy Canvas pages and generates
-          # image derivatives from large sources in a single request.
+          # Headroom for the functional page sweep (heavy Canvas page renders).
           mkdir -p .ddev/php
-          printf 'memory_limit = 1024M\nmax_execution_time = 240\n' > .ddev/php/99-tests.ini
+          printf 'memory_limit = 1024M\nmax_execution_time = 600\n' > .ddev/php/99-tests.ini
 
           ddev start
+
+          # Functional-test page requests emit dozens of X-Drupal-Assertion-*
+          # response headers (the test-site error handler serializes every
+          # deprecation into a header). On pages with many deprecating
+          # dependencies these exceed nginx's default fastcgi buffers and nginx
+          # answers 502 ("upstream sent too big header"). Bump the buffers in
+          # the generated config and restart.
+          sed -i '/#ddev-generated/d; s/fastcgi_buffers 16 16k;/fastcgi_buffers 64 32k;/; s/fastcgi_buffer_size 32k;/fastcgi_buffer_size 128k;/' .ddev/nginx_full/nginx-site.conf
+          ddev restart
           ddev composer create-project --no-install drupal/recommended-project
 
           # Require development dependencies like PHPUnit, but don't install them yet.
