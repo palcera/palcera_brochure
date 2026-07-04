@@ -35,6 +35,11 @@ jobs:
           ddev config --web-environment-add='SIMPLETEST_BASE_URL=$DDEV_PRIMARY_URL'
           ddev config --web-environment-add='SIMPLETEST_DB=$DDEV_DATABASE_FAMILY://db:db@db/db'
 
+          # The functional page sweep renders heavy Canvas pages and generates
+          # image derivatives from large sources in a single request.
+          mkdir -p .ddev/php
+          printf 'memory_limit = 1024M\nmax_execution_time = 240\n' > .ddev/php/99-tests.ini
+
           ddev start
           ddev composer create-project --no-install drupal/recommended-project
 

@@ -88,7 +88,7 @@ class ValidationTest extends BrowserTestBase {
     ];
     foreach ($paths as $path) {
       $this->drupalGet($path);
-      $this->assertSession()->statusCodeEquals(200);
+      $this->assertSame(200, $this->getSession()->getStatusCode(), "Page $path did not return 200.");
     }
   }
 
