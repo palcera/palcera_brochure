@@ -50,3 +50,12 @@ releases are not maintained; update to the latest release to receive fixes.
 - A Content-Security-Policy is shipped in **report-only** mode (via `seckit`) so it never
   breaks a site on install; consumers are encouraged to review the reports and switch the
   policy to enforcing for their production deployment.
+
+## Server-level hardening (operator checklist)
+
+These cannot be set by a Drupal recipe and belong to your hosting layer:
+
+- **Strict-Transport-Security (HSTS)** — enable at your TLS terminator / web server.
+- **X-Powered-By** — hide the PHP version with `expose_php = Off` in php.ini.
+- **Permissions-Policy** — add at the web-server level if your policy requires it; the
+  template ships `Referrer-Policy: strict-origin-when-cross-origin` via seckit.

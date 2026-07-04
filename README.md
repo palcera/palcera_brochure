@@ -6,6 +6,8 @@ demo content ready to replace with your own.
 
 ![Screenshot of the Palcera Brochure home page](screenshot.webp)
 
+Mobile: the theme is fully responsive — [mobile screenshot](screenshot-mobile.webp).
+
 ## What you get
 
 - **9-section Canvas home page** — hero, stats band, services grid, two feature sections,
@@ -47,7 +49,8 @@ in your project.
 
 1. Replace the demo company name, contact details, and logo (Appearance → Palcera settings).
 2. Edit or delete the demo people, services, and articles.
-3. Browse add-ons in the Project Browser (`recommended.yml` is an optional curated-list stub — unused until stable Drupal CMS 2.x add-on recipes exist to recommend).
+3. Set your timezone (Regional settings — the template seeds `America/Chicago` as a default).
+4. Browse add-ons in the Project Browser (`recommended.yml` is an optional curated-list stub — unused until stable Drupal CMS 2.x add-on recipes exist to recommend).
 
 ## Rebranding (colors, typography, design tokens)
 
